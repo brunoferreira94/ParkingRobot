@@ -1,5 +1,5 @@
-#define speed 75
-#define low_speed 55
+#define speed 60
+#define low_speed 40
 #define COLOR_SENSOR IN_3
 #define USONIC_FRONT IN_4
 #define USONIC_BACK IN_2
@@ -23,76 +23,65 @@ task main()
     distance_back = SensorUS(USONIC_BACK);
 
 
-    while(flag_inicio < 3)
+    while(flag_inicio < 9999)
     {
         color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
-        
+
         //if(scaled[0]<120 && scaled[1]<100 && scaled[2]<100)
         if(colorval <= 2)
         {
             OnFwd(OUT_AC,speed);
         }
-        else if(colorval > 2)
-        {
-            if(colorval > 2)
-            {
-                OnFwd(OUT_A,low_speed);
-                OnRev(OUT_C,low_speed);
-                Wait(100);
+        else{
+            int cont = 0;
+            while(colorval > 2 && cont < 2){
+                OnRev(OUT_A, low_speed);
+                OnRev(OUT_C, -low_speed);
+                Wait(50);
                 color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
+                cont++;
             }
-            if(colorval > 2)
-            {
-                OnFwd(OUT_C,low_speed);
-                OnRev(OUT_A,low_speed);
-                Wait(200);
+            cont = 0;
+            while(colorval > 2 && cont < 4){
+                OnRev(OUT_A, -low_speed);
+                OnRev(OUT_C, low_speed);
+                Wait(50);
                 color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
-            }
-            if(colorval > 2)
-            {
-                OnFwd(OUT_A,low_speed);
-                OnRev(OUT_C,low_speed);
-                Wait(300);
-                color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
-            }
-            if(colorval > 2)
-            {
-                OnFwd(OUT_C,low_speed);
-                OnRev(OUT_A,low_speed);
-                Wait(400);
-                color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
-            }
-            if(colorval > 2)
-            {
-                OnFwd(OUT_A,low_speed);
-                OnRev(OUT_C,low_speed);
-                Wait(200);
-                color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
+                cont++;
             }
         }
 
         distance = SensorUS(USONIC_LEFT);
         distance_back = SensorUS(USONIC_BACK);
 
-        do {
-           if(distance < 40){
-                       flag_inicio = 1;
-                       }
-           distance = SensorUS(USONIC_LEFT);
-           }while(flag_inicio == 0);
-           
-        if(flag_inicio == 1 && distance > 16){
+
+        if(distance < 25){
             flag_inicio++;
-            distance = 50; //só para dar um delay até a próxima verificação
             }
-        Wait(50);
-        if(flag_inicio == 2 && distance > 16){
-            flag_inicio++;
-            distance = SensorUS(USONIC_LEFT);
+        if(flag_inicio > 10 && distance > 16){
+            flag_inicio = 9999;
             }
 
     }
     
+    //Gira em sentido anti-horário
+    OnRev(OUT_C,75);
+    OnRev(OUT_A,-75);
+    Wait(500);
+    //Enquanto não estiver perto o suficiente, vá em frente
+    while(SensorUS(USONIC_FRONT) > 20){
+         OnFwd(OUT_AC, low_speed);
+    }
+    
+    //Gira em sentido horário
+    while(SensorUS(USONIC_FRONT) > 30 && SensorUS(USONIC_BACK) > 30 && SensorUS(USONIC_LEFT) > 30){
+         OnRev(OUT_C,-75);
+         OnRev(OUT_A,75);
+         Wait(100);
+    }
+    
+    
+     /*
     //se move em S para frente
     OnFwd(OUT_C,25);
     OnFwd(OUT_A,75);
@@ -123,7 +112,7 @@ task main()
     OnFwd(OUT_A,75);
     OnRev(OUT_C,75);
     Wait(100);
-
+    */
 
 }
 
