@@ -6,7 +6,7 @@
 #define USONIC_LEFT IN_1
 
 int flag_inicio = 0, color, colorval;
-float distance;
+float distance, distance_back;
 unsigned int raw[], norm[], scaled[];
 
 task main()
@@ -20,9 +20,10 @@ task main()
 
     color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
     distance = SensorUS(USONIC_LEFT);
+    distance_back = SensorUS(USONIC_BACK);
 
 
-    while(flag_inicio < 2)
+    while(flag_inicio < 3)
     {
         color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
         
@@ -71,12 +72,58 @@ task main()
         }
 
         distance = SensorUS(USONIC_LEFT);
+        distance_back = SensorUS(USONIC_BACK);
 
-        if(distance < 16)
-            flag_inicio = 1;
-        if(flag_inicio == 1 && distance > 16)
-            flag_inicio = 2;
+        do {
+           if(distance < 40){
+                       flag_inicio = 1;
+                       }
+           distance = SensorUS(USONIC_LEFT);
+           }while(flag_inicio == 0);
+           
+        if(flag_inicio == 1 && distance > 16){
+            flag_inicio++;
+            distance = 50; //só para dar um delay até a próxima verificação
+            }
+        Wait(50);
+        if(flag_inicio == 2 && distance > 16){
+            flag_inicio++;
+            distance = SensorUS(USONIC_LEFT);
+            }
 
     }
+    
+    //se move em S para frente
+    OnFwd(OUT_C,25);
+    OnFwd(OUT_A,75);
+    Wait(1750);
+    OnFwd(OUT_A,15);
+    OnFwd(OUT_C,75);
+    Wait(900);
+    
+    //Gira em torno do eixo
+    OnFwd(OUT_C,75);
+    OnRev(OUT_A,75);
+    Wait(850);
+    
+    //Dá ré em curva
+    distance_back = SensorUS(USONIC_BACK);
+    
+    while(distance_back >= 5){
+                        distance_back = SensorUS(USONIC_BACK);
+                        NumOut(0,0,distance_back);
+                        OnRev(OUT_C,75);
+                        OnRev(OUT_A,25);
+                        Wait(25);
+                        ClearScreen();
+                        }
+
+                        Off(OUT_AC);
+                        
+    OnFwd(OUT_A,75);
+    OnRev(OUT_C,75);
+    Wait(100);
+
+
 }
 
