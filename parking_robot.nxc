@@ -66,21 +66,21 @@ task main()
         //SE A DIFERENÇA ENTRE A ATUAL DISTÂNCIA E A PRIMEIRA DISTÂNCIA FOR MAIOR QUE 5 EM VALOR ABSOLUTO, ANDA 500 MS PARA FRENTE
         if(abs(oldDistance - newDistance) > diferenca && flag_inicio == 0){
             ClearScreen();
-            TextOut(0,0, "FLAG 1");
-            flag_inicio = 1;
+            TextOut(0,0, "FLAG 0");
             OnFwd(OUT_AC, low_speed);
-            Wait(2000);
+            Wait(1500);
             oldDistance = SensorUS(USONIC_LEFT);
+            flag_inicio = 1;
         }
 
         //OBTÉM A ATUAL DISTÂNCIA
         newDistance = SensorUS(USONIC_LEFT);
         //SE A DIFERENÇA ENTRE A ATUAL DISTÂNCIA E A PRIMEIRA DISTÂNCIA FOR MAIOR QUE 5 EM VALOR ABSOLUTO, OBTÉM A CONTAGEM DA ROTAÇÃO DO MOTOR
         if(abs(oldDistance - newDistance) > diferenca && flag_inicio == 1){
+            ClearScreen();
+            TextOut(0,0, "FLAG 1");
             oldDistance = newDistance;
             boxBegin = MotorRotationCount(OUT_A);
-            ClearScreen();
-            TextOut(0,0, "FLAG 2");
             flag_inicio = 2;
         }
 
@@ -88,11 +88,16 @@ task main()
         newDistance = SensorUS(USONIC_LEFT);
         //SE A DIFERENÇA ENTRE A ATUAL DISTÂNCIA E A PRIMEIRA DISTÂNCIA FOR MAIOR QUE 5 EM VALOR ABSOLUTO, OBTÉM A DISTÂNCIA ENTRE AS DUAS CAIXAS EM CM
         if(abs(oldDistance - newDistance) > diferenca && flag_inicio == 2){
+            ClearScreen();
+            TextOut(0,0, "FLAG 2");
             oldDistance = newDistance;
             boxEnd = MotorRotationCount(OUT_A);
-            spaceBtwBoxes = (boxEnd - boxBegin)*diamRoda;
+            spaceBtwBoxes = ((boxEnd - boxBegin)*diamRoda)/1000;
             //SE A DISTÂNCIA ENTRE AS CAIXAS FOR MENOR QUE 15, DESLIGA O ROBÔ
-            if(spaceBtwBoxes < 15){
+
+            if(spaceBtwBoxes < 6.5){
+                ClearScreen();
+                TextOut(0,0, "Sem espaço: " + NumToStr(spaceBtwBoxes));
                 while(true){
                   Off(OUT_AC);
                   Wait(1000);
@@ -100,17 +105,27 @@ task main()
             }
             ClearScreen();
             TextOut(0,0, "FLAG 3");
+            ClearScreen();
+            NumOut(0,0, spaceBtwBoxes);
             flag_inicio = 3;
         }
 
     }
 
     distance = SensorUS(USONIC_LEFT);
-    while(flag_inicio == 3){
-         distance = SensorUS(USONIC_LEFT);
-         while((MotorRotationCount(OUT_A) - boxEnd) > spaceBtwBoxes/2){
+         while(((boxEnd - MotorRotationCount(OUT_A))*diamRoda)/1000 < spaceBtwBoxes/2){
               OnRev(OUT_AC, low_speed);
          }
+         OnRev(OUT_C, speed);
+         OnFwd(OUT_A, speed);
+         Wait(2000);
+         while(SensorUS(USONIC_FRONT) > 20){
+              distance = SensorUS(USONIC_LEFT);
+              OnFwd(OUT_AC, low_speed);
+         }
+         OnRev(OUT_A, speed);
+         OnFwd(OUT_C, speed);
+         Wait(2000);
          Off(OUT_AC);
          /*if(distance > 20){
            //Gira em sentido anti-horário
@@ -120,7 +135,6 @@ task main()
            flag_inicio = 3;
           }
           */
-      }
 
       /*cont =0;
       while(cont < 3){

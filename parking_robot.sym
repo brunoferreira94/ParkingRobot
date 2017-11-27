@@ -1,160 +1,200 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__D0SetSensorLowspeed_inline_main	6	1	0	4	9
-1	__DF0main	10	1	4	4	4
-2	__DU0SetSensorLowspeed_inline_main	5	1	8	4	6
-3	__signed_stack_002ForwardOnBlackLine	6	1	12	4	4
-4	__signed_stack_001ForwardOnBlackLine	6	1	16	4	10
-5	__RLSBmutex0	9	0	20	4	16
-6	__ColorSensorReadMutex	9	0	24	4	8
-7	__RLSBmutex1	9	0	28	4	4
-8	__D0main	6	1	32	4	70
-9	__D0ForwardOnBlackLine	6	1	36	4	39
-10	__signed_stack_001main	6	1	40	4	24
-11	boxEnd	10	1	44	4	2
-12	boxBegin	10	1	48	4	2
-13	diamRoda	10	0	52	4	1
-14	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	56	4	4
-15	__Wait_7qG2_ms_7qG2_000_inline_ForwardOnBlackLine	5	1	60	4	4
-16	__float_stack_001main	10	1	64	4	6
-17	__signed_stack_002main	6	1	68	4	12
-18	distance	10	1	72	4	5
-19	spaceBtwBoxes	10	1	76	4	3
-20	distance_back	10	1	80	4	2
-21	__CLSRMutex1	9	0	84	4	2
-22	__CLSRMutex0	9	0	88	4	2
-23	__CLSCSMutex1	9	0	92	4	2
-24	__CLSWMutex1	9	0	96	4	2
-25	__OnRevMutex	9	0	100	4	10
+0	__ColorSensorReadMutex	9	0	0	4	8
+1	spaceBtwBoxes	10	1	4	4	5
+2	distance_back	10	1	8	4	2
+3	__RLSBmutex0	9	0	12	4	16
+4	distance	10	1	16	4	5
+5	boxBegin	10	1	20	4	2
+6	__CLSWMutex3	9	0	24	4	2
+7	__CLSCSMutex3	9	0	28	4	2
+8	diamRoda	10	0	32	4	2
+9	boxEnd	10	1	36	4	2
+10	__CLSRMutex3	9	0	40	4	2
+11	__RLSBmutex1	9	0	44	4	4
+12	__D0SetSensorLowspeed_inline_main	6	1	48	4	9
+13	__RLSBmutex3	9	0	52	4	2
+14	__DF0main	10	1	56	4	8
+15	__D0ForwardOnBlackLine	6	1	60	4	39
+16	__D0main	6	1	64	4	89
+17	__DU0SetSensorLowspeed_inline_main	5	1	68	4	6
+18	__signed_stack_002main	6	1	72	4	18
+19	__float_stack_001main	10	1	76	4	14
+20	__signed_stack_001main	6	1	80	4	30
+21	__signed_stack_001ForwardOnBlackLine	6	1	84	4	10
+22	__signed_stack_002ForwardOnBlackLine	6	1	88	4	4
+23	__CLSRMutex0	9	0	92	4	2
+24	__Wait_7qG2_ms_7qG2_000_inline_ForwardOnBlackLine	5	1	96	4	4
+25	__CLSCSMutex1	9	0	100	4	2
 26	__CLSCSMutex0	9	0	104	4	2
 27	__CLSWMutex0	9	0	108	4	2
-28	colorval	4	1	112	2	7
-29	cont	4	1	114	2	8
-30	oldDistance	4	1	116	2	7
-31	__constVal200	4	0	118	2	6
-32	flag_inicio	4	1	120	2	8
-33	color	4	1	122	2	4
-34	newDistance	4	1	124	2	5
-35	diferenca	4	0	126	2	3
-36	__constVal32	2	0	128	1	27
-37	__ForwardOnBlackLine_return	1	1	129	1	3
-38	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	130	1	6
-39	__zfSetSensorLowspeed_inline_main	1	1	131	1	6
-40	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	132	1	6
-41	__constVal96	2	0	133	1	9
-42	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	134	1	6
-43	__constVal0	2	1	135	1	37
-44	__constVal3	2	0	136	1	9
-45	__ResetSensorPort	1	1	137	1	6
-46	__constVal1	2	0	138	1	11
-47	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	139	1	3
-48	____ResetSensorSubroutine_return	1	1	140	1	6
-49	__ResetSensorTmp	1	1	141	1	2
-50	__constVal63	2	0	142	1	9
-51	__constVal15	2	0	143	1	23
-52	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	144	1	15
-53	____ReadLSBytes1_return	1	1	145	1	4
-54	____initialize_global_data_return	1	1	146	1	3
-55	__SetSensorColorFull_7qG2_port_7qG2_000_inline_main	1	1	147	1	4
-56	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	148	1	6
-57	____ReadLSBytes0_return	1	1	149	1	10
-58	__RLSBResult0	2	1	150	1	7
-59	__RLSBIterations0	1	1	151	1	4
-60	__RLSBytesCount0	1	1	152	1	14
-61	__RLSBResult1	2	1	153	1	7
-62	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	154	1	6
-63	__PFTmp	1	1	155	1	1
-64	__zfForwardOnBlackLine	1	1	156	1	17
-65	__zfmain	1	1	157	1	35
-66	__constValNeg30	2	0	158	1	2
-67	__RLSBIterations1	1	1	159	1	4
-68	__RLSBytesCount1	1	1	160	1	8
-69	__OnRev_Tmp	2	1	161	1	10
-70	__constVal13	2	0	162	1	1
-71	__constVal2	2	0	163	1	7
-72	__CLSRArgs1	8	0	4	12	5
-73	__CLSRArgs1.Result	2	1	164	1	5
-74	__CLSRArgs1.Port	1	1	165	1	5
-75	__CLSRArgs1.Buffer	7	0	166	4	5
-76	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
-77	__CLSRArgs1.BufferLen	1	1	168	1	5
-78	__CLSWArgs1	8	0	4	12	5
-79	__CLSWArgs1.Result	2	1	172	1	5
-80	__CLSWArgs1.Port	1	1	173	1	5
-81	__CLSWArgs1.Buffer	7	0	174	4	5
-82	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
-83	__CLSWArgs1.ReturnLen	1	1	176	1	5
-84	__CLSCSArgs1	8	0	3	4	4
-85	__CLSCSArgs1.Result	2	1	180	1	4
-86	__CLSCSArgs1.Port	1	1	181	1	4
-87	__CLSCSArgs1.BytesReady	1	1	182	1	4
-88	__TextOutArgs	8	0	4	16	15
-89	__TextOutArgs.Result	2	1	184	1	15
-90	__TextOutArgs.Location	8	0	2	4	15
-91	__TextOutArgs.Location.X	4	1	188	2	15
-92	__TextOutArgs.Location.Y	4	1	190	2	15
-93	__TextOutArgs.Text	7	0	192	4	15
-94	__TextOutArgs.Text.Text_type	1	0	0	1	0
-95	__TextOutArgs.Options	5	1	196	4	15
-96	__PointOutArgs	8	0	3	12	12
-97	__PointOutArgs.Result	2	1	200	1	12
-98	__PointOutArgs.Location	8	0	2	4	12
-99	__PointOutArgs.Location.X	4	1	204	2	12
-100	__PointOutArgs.Location.Y	4	1	206	2	12
-101	__PointOutArgs.Options	5	1	208	4	12
-102	__ColorSensorReadArgs	8	0	7	20	28
-103	__ColorSensorReadArgs.Result	2	1	212	1	28
-104	__ColorSensorReadArgs.Port	1	1	213	1	28
-105	__ColorSensorReadArgs.ColorValue	4	1	214	2	28
-106	__ColorSensorReadArgs.RawArray	7	0	216	4	28
-107	__ColorSensorReadArgs.RawArray.RawArray_type	3	0	0	2	0
-108	__ColorSensorReadArgs.NormalizedArray	7	0	218	4	28
-109	__ColorSensorReadArgs.NormalizedArray.NormalizedArray_type	3	0	0	2	0
-110	__ColorSensorReadArgs.ScaledArray	7	0	220	4	28
-111	__ColorSensorReadArgs.ScaledArray.ScaledArray_type	4	0	0	2	0
-112	__ColorSensorReadArgs.Invalid	1	1	222	1	28
-113	__CLSWArgs0	8	0	4	12	5
-114	__CLSWArgs0.Result	2	1	224	1	5
-115	__CLSWArgs0.Port	1	1	225	1	5
-116	__CLSWArgs0.Buffer	7	0	226	4	5
-117	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
-118	__CLSWArgs0.ReturnLen	1	1	228	1	5
-119	__CLSCSArgs0	8	0	3	4	4
-120	__CLSCSArgs0.Result	2	1	232	1	4
-121	__CLSCSArgs0.Port	1	1	233	1	4
-122	__CLSCSArgs0.BytesReady	1	1	234	1	4
-123	__CLSRArgs0	8	0	4	12	5
-124	__CLSRArgs0.Result	2	1	236	1	5
-125	__CLSRArgs0.Port	1	1	237	1	5
-126	__CLSRArgs0.Buffer	7	0	238	4	5
-127	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
-128	__CLSRArgs0.BufferLen	1	1	240	1	5
-129	__constStr0011	7	0	242	4	1
-130	__constStr0011.__constStr0011_type	1	1	0	1	0
-131	norm	7	0	244	4	4
-132	norm.norm_type	3	0	0	2	0
-133	raw	7	0	246	4	4
-134	raw.raw_type	3	0	0	2	0
-135	__constStr0010	7	0	248	4	1
-136	__constStr0010.__constStr0010_type	1	1	0	1	0
-137	__OUT_AC	7	0	250	4	5
-138	__OUT_AC.__OUT_AC_type	1	0	0	1	0
-139	__constStr0009	7	0	252	4	1
-140	__constStr0009.__constStr0009_type	1	1	0	1	0
-141	__RLSLastGoodRead1	7	0	254	4	2
-142	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
-143	__RLSReadBuf1	7	0	256	4	10
-144	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
-145	__strbufmain	7	0	258	4	6
-146	__strbufmain.__strbufmain_type	1	0	0	1	0
-147	__RLSReadBuf0	7	0	260	4	22
-148	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
-149	scaled	7	0	262	4	4
-150	scaled.scaled_type	3	0	0	2	0
-151	__RLSBbufLSWrite1	7	0	264	4	10
-152	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
-153	__RLSLastGoodRead0	7	0	266	4	2
-154	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+28	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	112	4	8
+29	__CLSRMutex1	9	0	116	4	2
+30	__constValf6P5	10	0	120	4	1
+31	__OnRevMutex	9	0	124	4	14
+32	__CLSWMutex1	9	0	128	4	2
+33	color	4	1	132	2	4
+34	colorval	4	1	134	2	7
+35	flag_inicio	4	1	136	2	8
+36	__constVal1000	4	0	138	2	2
+37	__constVal200	4	0	140	2	12
+38	cont	4	1	142	2	8
+39	diferenca	4	0	144	2	3
+40	newDistance	4	1	146	2	5
+41	oldDistance	4	1	148	2	7
+42	__constValNeg30	2	0	150	1	2
+43	__zfmain	1	1	151	1	38
+44	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	152	1	3
+45	____initialize_global_data_return	1	1	153	1	3
+46	__ForwardOnBlackLine_return	1	1	154	1	3
+47	__constVal96	2	0	155	1	14
+48	__constVal63	2	0	156	1	14
+49	__zfForwardOnBlackLine	1	1	157	1	17
+50	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	158	1	6
+51	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	159	1	6
+52	__SetSensorColorFull_7qG2_port_7qG2_000_inline_main	1	1	160	1	4
+53	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	161	1	15
+54	__zfSetSensorLowspeed_inline_main	1	1	162	1	6
+55	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	163	1	6
+56	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	164	1	6
+57	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	165	1	6
+58	__RLSBytesCount1	1	1	166	1	8
+59	__RLSBResult1	2	1	167	1	7
+60	____ResetSensorSubroutine_return	1	1	168	1	6
+61	__constVal2	2	0	169	1	9
+62	__ResetSensorTmp	1	1	170	1	2
+63	__RLSBIterations1	1	1	171	1	4
+64	__RLSBytesCount0	1	1	172	1	14
+65	__RLSBResult0	2	1	173	1	7
+66	____ReadLSBytes0_return	1	1	174	1	10
+67	____ReadLSBytes1_return	1	1	175	1	4
+68	__constVal15	2	0	176	1	25
+69	__RLSBIterations0	1	1	177	1	4
+70	__constVal13	2	0	178	1	1
+71	__constVal1	2	0	179	1	15
+72	__RLSBIterations3	1	1	180	1	4
+73	__PFTmp	1	1	181	1	1
+74	__OnRev_Tmp	2	1	182	1	14
+75	__constVal32	2	0	183	1	42
+76	__RLSBResult3	2	1	184	1	7
+77	__ResetSensorPort	1	1	185	1	6
+78	____ReadLSBytes3_return	1	1	186	1	3
+79	__constVal3	2	0	187	1	14
+80	__RLSBytesCount3	1	1	188	1	7
+81	__constVal0	2	1	189	1	55
+82	__CLSWArgs1	8	0	4	12	5
+83	__CLSWArgs1.Result	2	1	192	1	5
+84	__CLSWArgs1.Port	1	1	193	1	5
+85	__CLSWArgs1.Buffer	7	0	194	4	5
+86	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+87	__CLSWArgs1.ReturnLen	1	1	196	1	5
+88	__CLSRArgs1	8	0	4	12	5
+89	__CLSRArgs1.Result	2	1	200	1	5
+90	__CLSRArgs1.Port	1	1	201	1	5
+91	__CLSRArgs1.Buffer	7	0	202	4	5
+92	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+93	__CLSRArgs1.BufferLen	1	1	204	1	5
+94	__CLSWArgs3	8	0	4	12	5
+95	__CLSWArgs3.Result	2	1	208	1	5
+96	__CLSWArgs3.Port	1	1	209	1	5
+97	__CLSWArgs3.Buffer	7	0	210	4	5
+98	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+99	__CLSWArgs3.ReturnLen	1	1	212	1	5
+100	__CLSCSArgs3	8	0	3	4	4
+101	__CLSCSArgs3.Result	2	1	216	1	4
+102	__CLSCSArgs3.Port	1	1	217	1	4
+103	__CLSCSArgs3.BytesReady	1	1	218	1	4
+104	__CLSWArgs0	8	0	4	12	5
+105	__CLSWArgs0.Result	2	1	220	1	5
+106	__CLSWArgs0.Port	1	1	221	1	5
+107	__CLSWArgs0.Buffer	7	0	222	4	5
+108	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+109	__CLSWArgs0.ReturnLen	1	1	224	1	5
+110	__CLSCSArgs0	8	0	3	4	4
+111	__CLSCSArgs0.Result	2	1	228	1	4
+112	__CLSCSArgs0.Port	1	1	229	1	4
+113	__CLSCSArgs0.BytesReady	1	1	230	1	4
+114	__CLSCSArgs1	8	0	3	4	4
+115	__CLSCSArgs1.Result	2	1	232	1	4
+116	__CLSCSArgs1.Port	1	1	233	1	4
+117	__CLSCSArgs1.BytesReady	1	1	234	1	4
+118	__CLSRArgs0	8	0	4	12	5
+119	__CLSRArgs0.Result	2	1	236	1	5
+120	__CLSRArgs0.Port	1	1	237	1	5
+121	__CLSRArgs0.Buffer	7	0	238	4	5
+122	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+123	__CLSRArgs0.BufferLen	1	1	240	1	5
+124	__TextOutArgs	8	0	4	16	32
+125	__TextOutArgs.Result	2	1	244	1	32
+126	__TextOutArgs.Location	8	0	2	4	32
+127	__TextOutArgs.Location.X	4	1	248	2	32
+128	__TextOutArgs.Location.Y	4	1	250	2	32
+129	__TextOutArgs.Text	7	0	252	4	32
+130	__TextOutArgs.Text.Text_type	1	0	0	1	0
+131	__TextOutArgs.Options	5	1	256	4	32
+132	__PointOutArgs	8	0	3	12	24
+133	__PointOutArgs.Result	2	1	260	1	24
+134	__PointOutArgs.Location	8	0	2	4	24
+135	__PointOutArgs.Location.X	4	1	264	2	24
+136	__PointOutArgs.Location.Y	4	1	266	2	24
+137	__PointOutArgs.Options	5	1	268	4	24
+138	__ColorSensorReadArgs	8	0	7	20	28
+139	__ColorSensorReadArgs.Result	2	1	272	1	28
+140	__ColorSensorReadArgs.Port	1	1	273	1	28
+141	__ColorSensorReadArgs.ColorValue	4	1	274	2	28
+142	__ColorSensorReadArgs.RawArray	7	0	276	4	28
+143	__ColorSensorReadArgs.RawArray.RawArray_type	3	0	0	2	0
+144	__ColorSensorReadArgs.NormalizedArray	7	0	278	4	28
+145	__ColorSensorReadArgs.NormalizedArray.NormalizedArray_type	3	0	0	2	0
+146	__ColorSensorReadArgs.ScaledArray	7	0	280	4	28
+147	__ColorSensorReadArgs.ScaledArray.ScaledArray_type	4	0	0	2	0
+148	__ColorSensorReadArgs.Invalid	1	1	282	1	28
+149	__CLSRArgs3	8	0	4	12	5
+150	__CLSRArgs3.Result	2	1	284	1	5
+151	__CLSRArgs3.Port	1	1	285	1	5
+152	__CLSRArgs3.Buffer	7	0	286	4	5
+153	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+154	__CLSRArgs3.BufferLen	1	1	288	1	5
+155	__ArrHelper__main_244_1	7	0	290	4	2
+156	__ArrHelper__main_244_1.__ArrHelper__main_244_1_type	1	0	0	1	0
+157	__constStr0010	7	0	292	4	1
+158	__constStr0010.__constStr0010_type	1	1	0	1	0
+159	__constStr0009	7	0	294	4	1
+160	__constStr0009.__constStr0009_type	1	1	0	1	0
+161	__strbufmain	7	0	296	4	12
+162	__strbufmain.__strbufmain_type	1	0	0	1	0
+163	__RLSReadBuf3	7	0	298	4	8
+164	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+165	__constStr0012	7	0	300	4	1
+166	__constStr0012.__constStr0012_type	1	1	0	1	0
+167	__OUT_AC	7	0	302	4	6
+168	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+169	__constStr0013	7	0	304	4	1
+170	__constStr0013.__constStr0013_type	1	1	0	1	0
+171	__constStr0011	7	0	306	4	1
+172	__constStr0011.__constStr0011_type	1	1	0	1	0
+173	__ArrHelper__main_244_0	7	0	308	4	2
+174	__ArrHelper__main_244_0.__ArrHelper__main_244_0_type	1	0	0	1	0
+175	__RLSBbufLSWrite1	7	0	310	4	11
+176	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+177	__RLSLastGoodRead0	7	0	312	4	2
+178	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+179	raw	7	0	314	4	4
+180	raw.raw_type	3	0	0	2	0
+181	norm	7	0	316	4	4
+182	norm.norm_type	3	0	0	2	0
+183	scaled	7	0	318	4	4
+184	scaled.scaled_type	3	0	0	2	0
+185	__RLSLastGoodRead3	7	0	320	4	2
+186	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+187	__strretvalmain	7	0	322	4	2
+188	__strretvalmain.__strretvalmain_type	1	0	0	1	0
+189	__RLSReadBuf1	7	0	324	4	10
+190	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+191	__RLSReadBuf0	7	0	326	4	22
+192	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+193	__RLSLastGoodRead1	7	0	328	4	2
+194	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
 0	49	0	#line 49 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
@@ -169,7 +209,7 @@ Clump	Line	PC	Source
 0	3803	9		setin __constVal0, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 1
 0	3803	13		mov __ResetSensorPort, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main
 0	3803	15		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-0	4024	17	#line 4024 "NXCDefs.h"
+0	4028	17	#line 4028 "NXCDefs.h"
 0	3802	17	#line 3802 "NXCDefs.h"
 0	50	17	#line 50 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	50	17	#line 50 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
@@ -215,7 +255,7 @@ Clump	Line	PC	Source
 0	3695	57	#pragma macro 4
 0	3695	57		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
 0	3695	59		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-0	4118	61	#line 4118 "NXCDefs.h"
+0	4122	61	#line 4122 "NXCDefs.h"
 0	3694	61	#line 3694 "NXCDefs.h"
 0	3761	61	#line 3761 "NXCDefs.h"
 0	51	61	#line 51 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
@@ -262,7 +302,7 @@ Clump	Line	PC	Source
 0	3695	101	#pragma macro 4
 0	3695	101		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
 0	3695	103		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-0	4185	105	#line 4185 "NXCDefs.h"
+0	4189	105	#line 4189 "NXCDefs.h"
 0	3694	105	#line 3694 "NXCDefs.h"
 0	3761	105	#line 3761 "NXCDefs.h"
 0	52	105	#line 52 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
@@ -309,7 +349,7 @@ Clump	Line	PC	Source
 0	3695	145	#pragma macro 4
 0	3695	145		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
 0	3695	147		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-0	4252	149	#line 4252 "NXCDefs.h"
+0	4256	149	#line 4256 "NXCDefs.h"
 0	3694	149	#line 3694 "NXCDefs.h"
 0	3761	149	#line 3761 "NXCDefs.h"
 0	54	149	#line 54 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
@@ -324,7 +364,7 @@ Clump	Line	PC	Source
 0	55	161		mov scaled, __ColorSensorReadArgs.ScaledArray
 0	55	163		tst 4, __D0main, __ColorSensorReadArgs.Result
 0	55	166		release __ColorSensorReadMutex
-0	4257	167	#line 4257 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	4261	167	#line 4261 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	54	167	#line 54 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	55	167		mov color, __D0main
 0	54	169	#line 54 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
@@ -338,7 +378,7 @@ Clump	Line	PC	Source
 0	56	178		subcall __ReadLSBytes0, ____ReadLSBytes0_return
 0	56	180		index __D0main, __RLSReadBuf0, 65535
 0	56	184		release __RLSBmutex0
-0	4265	185	#line 4265 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	4269	185	#line 4269 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	55	185	#line 55 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	56	185		mov distance, __D0main
 0	55	187	#line 55 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
@@ -352,7 +392,7 @@ Clump	Line	PC	Source
 0	57	196		subcall __ReadLSBytes1, ____ReadLSBytes1_return
 0	57	198		index __D0main, __RLSReadBuf1, 65535
 0	57	202		release __RLSBmutex1
-0	4273	203	#line 4273 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	4277	203	#line 4277 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	56	203	#line 56 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	57	203		mov distance_back, __D0main
 0	56	205	#line 56 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
@@ -384,7 +424,7 @@ Clump	Line	PC	Source
 0	65	232		subcall __ReadLSBytes0, ____ReadLSBytes0_return
 0	65	234		index __D0main, __RLSReadBuf0, 65535
 0	65	238		release __RLSBmutex0
-0	4306	239	#line 4306 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	4310	239	#line 4310 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	64	239	#line 64 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	65	239		mov newDistance, __D0main
 0	64	241	#line 64 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
@@ -427,7 +467,7 @@ Clump	Line	PC	Source
 0	6070	282		mov __PointOutArgs.Location.Y, __constVal200
 0	6070	284		mov __PointOutArgs.Options, __constVal1
 0	6070	286		syscall 14, __PointOutArgs
-0	4356	289	#line 4356 "NXCDefs.h"
+0	4360	289	#line 4360 "NXCDefs.h"
 0	6069	289	#line 6069 "NXCDefs.h"
 0	68	289	#line 68 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	68	289	#line 68 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
@@ -452,38 +492,38 @@ Clump	Line	PC	Source
 0	69	311	#line 69 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	69	311	#line 69 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	69	311	#line 69 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	70	311	#line 70 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	71	311		set flag_inicio, 1
+0	69	311	#line 69 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	70	311		set __D0main, 30
 0	70	314	#line 70 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	70	314	#line 70 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	70	314	#line 70 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	71	314		set __D0main, 30
-0	71	317	#line 71 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	72	317	#pragma macro 7
-0	72	317		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4402	340	#line 4402 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	71	340	#line 71 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	71	340	#line 71 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	72	340		set __Wait_7qG2_ms_7qG2_000_inline_main, 2000
-0	71	343	#line 71 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	71	314	#pragma macro 7
+0	71	314		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4399	337	#line 4399 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	70	337	#line 70 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	70	337	#line 70 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	71	337		set __Wait_7qG2_ms_7qG2_000_inline_main, 1500
+0	70	340	#line 70 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	7921	340	#line 7921 "NXCDefs.h"
+0	7922	340		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
 0	7921	343	#line 7921 "NXCDefs.h"
-0	7922	343		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	7921	346	#line 7921 "NXCDefs.h"
-0	72	346	#line 72 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	72	346	#line 72 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	73	346	#pragma macro 26
-0	73	346		acquire __RLSBmutex0
-0	73	347		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	73	349		set __RLSBytesCount0, 1
-0	73	352		wait2 NA, __constVal15
-0	73	355		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	73	357		index __D0main, __RLSReadBuf0, 65535
-0	73	361		release __RLSBmutex0
-0	4419	362	#line 4419 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	72	362	#line 72 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	73	362		mov oldDistance, __D0main
-0	72	364	#line 72 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	72	364	#line 72 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	71	343	#line 71 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	71	343	#line 71 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	72	343	#pragma macro 26
+0	72	343		acquire __RLSBmutex0
+0	72	344		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	72	346		set __RLSBytesCount0, 1
+0	72	349		wait2 NA, __constVal15
+0	72	352		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	72	354		index __D0main, __RLSReadBuf0, 65535
+0	72	358		release __RLSBmutex0
+0	4416	359	#line 4416 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	71	359	#line 71 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	72	359		mov oldDistance, __D0main
+0	71	361	#line 71 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	71	361	#line 71 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	73	361	#line 73 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	74	361		set flag_inicio, 1
+0	73	364	#line 73 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	73	364	#line 73 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	76	364	#line 76 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	76	364	#line 76 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	77	364	#pragma macro 26
@@ -494,7 +534,7 @@ Clump	Line	PC	Source
 0	77	373		subcall __ReadLSBytes0, ____ReadLSBytes0_return
 0	77	375		index __D0main, __RLSReadBuf0, 65535
 0	77	379		release __RLSBmutex0
-0	4429	380	#line 4429 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	4433	380	#line 4433 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	76	380	#line 76 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	77	380		mov newDistance, __D0main
 0	76	382	#line 76 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
@@ -531,45 +571,45 @@ Clump	Line	PC	Source
 0	80	415		tst 5, __zfmain, __D0main
 0	79	418	#line 79 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	80	418		brtst 4, __NXC_Label_574, __zfmain
-0	80	421	#line 80 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	81	421		mov oldDistance, newDistance
-0	80	423	#line 80 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	80	423	#line 80 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	81	423	#line 81 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	82	423		getout __D0main, __constVal0, 14
-0	81	427	#line 81 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	82	427		mov boxBegin, __D0main
-0	81	429	#line 81 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	6069	429	#line 6069 "NXCDefs.h"
-0	6070	429	#pragma macro 6
-0	6070	429		mov __PointOutArgs.Location.X, __constVal200
-0	6070	431		mov __PointOutArgs.Location.Y, __constVal200
-0	6070	433		mov __PointOutArgs.Options, __constVal1
-0	6070	435		syscall 14, __PointOutArgs
-0	4493	438	#line 4493 "NXCDefs.h"
-0	6069	438	#line 6069 "NXCDefs.h"
-0	82	438	#line 82 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	82	438	#line 82 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	83	438		set __signed_stack_001main, 0
-0	82	441	#line 82 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	82	441	#line 82 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	83	441		set __signed_stack_002main, 0
-0	82	444	#line 82 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	82	444	#line 82 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	83	444		strcat __strbufmain, __constStr0010
-0	83	448	#line 83 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	83	448	#line 83 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	84	448		mov __TextOutArgs.Location.X, __signed_stack_001main
-0	83	450	#line 83 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	84	450		mov __TextOutArgs.Location.Y, __signed_stack_002main
-0	83	452	#line 83 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	84	452		set __TextOutArgs.Options, 0
-0	83	455	#line 83 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	84	455		mov __TextOutArgs.Text, __strbufmain
-0	83	457	#line 83 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	84	457		syscall 13, __TextOutArgs
-0	83	460	#line 83 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	83	460	#line 83 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	6069	421	#line 6069 "NXCDefs.h"
+0	6070	421	#pragma macro 6
+0	6070	421		mov __PointOutArgs.Location.X, __constVal200
+0	6070	423		mov __PointOutArgs.Location.Y, __constVal200
+0	6070	425		mov __PointOutArgs.Options, __constVal1
+0	6070	427		syscall 14, __PointOutArgs
+0	4483	430	#line 4483 "NXCDefs.h"
+0	6069	430	#line 6069 "NXCDefs.h"
+0	80	430	#line 80 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	80	430	#line 80 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	81	430		set __signed_stack_001main, 0
+0	80	433	#line 80 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	80	433	#line 80 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	81	433		set __signed_stack_002main, 0
+0	80	436	#line 80 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	80	436	#line 80 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	81	436		strcat __strbufmain, __constStr0010
+0	81	440	#line 81 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	81	440	#line 81 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	82	440		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	81	442	#line 81 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	82	442		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	81	444	#line 81 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	82	444		set __TextOutArgs.Options, 0
+0	81	447	#line 81 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	82	447		mov __TextOutArgs.Text, __strbufmain
+0	81	449	#line 81 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	82	449		syscall 13, __TextOutArgs
+0	81	452	#line 81 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	81	452	#line 81 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	81	452	#line 81 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	82	452	#line 82 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	83	452		mov oldDistance, newDistance
+0	82	454	#line 82 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	82	454	#line 82 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	83	454	#line 83 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	84	454		getout __D0main, __constVal0, 14
+0	83	458	#line 83 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	84	458		mov boxBegin, __D0main
 0	83	460	#line 83 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	84	460	#line 84 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	85	460		set flag_inicio, 2
@@ -585,7 +625,7 @@ Clump	Line	PC	Source
 0	88	472		subcall __ReadLSBytes0, ____ReadLSBytes0_return
 0	88	474		index __D0main, __RLSReadBuf0, 65535
 0	88	478		release __RLSBmutex0
-0	4537	479	#line 4537 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	4541	479	#line 4541 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	87	479	#line 87 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	88	479		mov newDistance, __D0main
 0	87	481	#line 87 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
@@ -622,177 +662,373 @@ Clump	Line	PC	Source
 0	91	514		tst 5, __zfmain, __D0main
 0	90	517	#line 90 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
 0	91	517		brtst 4, __NXC_Label_591, __zfmain
-0	91	520	#line 91 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	92	520		mov oldDistance, newDistance
-0	91	522	#line 91 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	91	522	#line 91 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	92	522	#line 92 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	93	522		getout __D0main, __constVal0, 14
-0	92	526	#line 92 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	93	526		mov boxEnd, __D0main
-0	92	528	#line 92 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	92	528	#line 92 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	92	528	#line 92 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	92	528	#line 92 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	92	528	#line 92 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	93	528		sub __float_stack_001main, __D0main, boxBegin
-0	92	532	#line 92 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	94	532	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	94	532	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	95	532		mul spaceBtwBoxes, __float_stack_001main, diamRoda
-0	94	536	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	94	536	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	94	536	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	95	536		mov __float_stack_001main, spaceBtwBoxes
-0	94	538	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	94	538	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	95	538		mov __DF0main, __constVal15
-0	94	540	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	95	540		cmp 0, __zfmain, __float_stack_001main, __DF0main
-0	94	544	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	95	544		mov __D0main, __zfmain
-0	95	546	#line 95 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	96	546		brtst 4, __NXC_Label_602, __zfmain
-0	95	549	#line 95 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	96	549		set __D0main, 1
-0	96	552	#line 96 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	97	552		tst 5, __zfmain, __D0main
-0	96	555	#line 96 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	97	555		brtst 4, __NXC_Label_604, __zfmain
-0	97	558	#line 97 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	98	558	#pragma macro 7
-0	98	558		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4645	581	#line 4645 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	97	581	#line 97 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	97	581	#line 97 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	98	581		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
-0	97	584	#line 97 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	7921	584	#line 7921 "NXCDefs.h"
-0	7922	584		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	7921	587	#line 7921 "NXCDefs.h"
-0	98	587	#line 98 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	100	587	#line 100 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	101	587		jmp __NXC_Label_603
-0	100	589	#line 100 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	100	589	#line 100 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	6069	589	#line 6069 "NXCDefs.h"
-0	6070	589	#pragma macro 6
-0	6070	589		mov __PointOutArgs.Location.X, __constVal200
-0	6070	591		mov __PointOutArgs.Location.Y, __constVal200
-0	6070	593		mov __PointOutArgs.Options, __constVal1
-0	6070	595		syscall 14, __PointOutArgs
-0	4664	598	#line 4664 "NXCDefs.h"
-0	6069	598	#line 6069 "NXCDefs.h"
-0	101	598	#line 101 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	101	598	#line 101 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	102	598		set __signed_stack_001main, 0
-0	101	601	#line 101 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	101	601	#line 101 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	102	601		set __signed_stack_002main, 0
-0	101	604	#line 101 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	101	604	#line 101 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	102	604		strcat __strbufmain, __constStr0011
-0	102	608	#line 102 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	102	608	#line 102 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	103	608		mov __TextOutArgs.Location.X, __signed_stack_001main
-0	102	610	#line 102 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	103	610		mov __TextOutArgs.Location.Y, __signed_stack_002main
-0	102	612	#line 102 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	103	612		set __TextOutArgs.Options, 0
-0	102	615	#line 102 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	103	615		mov __TextOutArgs.Text, __strbufmain
-0	102	617	#line 102 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	103	617		syscall 13, __TextOutArgs
-0	102	620	#line 102 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	102	620	#line 102 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	102	620	#line 102 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	103	620	#line 103 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	104	620		set flag_inicio, 3
-0	103	623	#line 103 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	103	623	#line 103 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	107	623	#line 107 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	107	623	#line 107 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	108	623		jmp __NXC_Label_545
-0	107	625	#line 107 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	107	625	#line 107 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	108	625	#pragma macro 26
-0	108	625		acquire __RLSBmutex0
-0	108	626		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	108	628		set __RLSBytesCount0, 1
-0	108	631		wait2 NA, __constVal15
-0	108	634		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	108	636		index __D0main, __RLSReadBuf0, 65535
-0	108	640		release __RLSBmutex0
-0	4712	641	#line 4712 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	107	641	#line 107 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	108	641		mov distance, __D0main
-0	107	643	#line 107 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	107	643	#line 107 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	108	643	#line 108 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	109	643		mov __signed_stack_001main, flag_inicio
-0	108	645	#line 108 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	108	645	#line 108 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	109	645		set __D0main, 3
-0	108	648	#line 108 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	109	648		cmp 4, __zfmain, __signed_stack_001main, __D0main
-0	108	652	#line 108 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	109	652		mov __D0main, __zfmain
-0	109	654	#line 109 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	110	654		brtst 4, __NXC_Label_618, __zfmain
-0	109	657	#line 109 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	110	657	#pragma macro 26
-0	110	657		acquire __RLSBmutex0
-0	110	658		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	110	660		set __RLSBytesCount0, 1
-0	110	663		wait2 NA, __constVal15
-0	110	666		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	110	668		index __D0main, __RLSReadBuf0, 65535
-0	110	672		release __RLSBmutex0
-0	4735	673	#line 4735 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	109	673	#line 109 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	110	673		mov distance, __D0main
-0	109	675	#line 109 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	109	675	#line 109 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	110	675	#line 110 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	111	675		getout __signed_stack_001main, __constVal0, 14
-0	110	679	#line 110 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	110	679	#line 110 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	110	679	#line 110 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	111	679		sub __float_stack_001main, __signed_stack_001main, boxEnd
-0	110	683	#line 110 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	110	683	#line 110 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	110	683	#line 110 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	110	683	#line 110 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	110	683	#line 110 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	111	683		div __DF0main, spaceBtwBoxes, __constVal2
-0	110	687	#line 110 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	111	687		cmp 1, __zfmain, __float_stack_001main, __DF0main
-0	110	691	#line 110 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	111	691		mov __D0main, __zfmain
-0	111	693	#line 111 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	112	693		brtst 4, __NXC_Label_624, __zfmain
-0	111	696	#line 111 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	112	696		set __D0main, 30
-0	112	699	#line 112 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	113	699	#pragma macro 10
-0	113	699		acquire __OnRevMutex
-0	113	700		neg __OnRev_Tmp, __D0main
-0	113	703		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	113	726		release __OnRevMutex
-0	4776	727	#line 4776 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	112	727	#line 112 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	113	727	#line 113 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	114	727		jmp __NXC_Label_623
-0	113	729	#line 113 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	122	729	#line 122 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	123	729	#pragma macro 7
-0	123	729		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4783	752	#line 4783 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	122	752	#line 122 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	141	752	#line 141 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	142	752		jmp __NXC_Label_617
-0	141	754	#line 141 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-0	142	754		exit -1, -1
+0	6069	520	#line 6069 "NXCDefs.h"
+0	6070	520	#pragma macro 6
+0	6070	520		mov __PointOutArgs.Location.X, __constVal200
+0	6070	522		mov __PointOutArgs.Location.Y, __constVal200
+0	6070	524		mov __PointOutArgs.Options, __constVal1
+0	6070	526		syscall 14, __PointOutArgs
+0	4591	529	#line 4591 "NXCDefs.h"
+0	6069	529	#line 6069 "NXCDefs.h"
+0	91	529	#line 91 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	91	529	#line 91 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	92	529		set __signed_stack_001main, 0
+0	91	532	#line 91 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	91	532	#line 91 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	92	532		set __signed_stack_002main, 0
+0	91	535	#line 91 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	91	535	#line 91 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	92	535		strcat __strbufmain, __constStr0011
+0	92	539	#line 92 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	92	539	#line 92 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	93	539		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	92	541	#line 92 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	93	541		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	92	543	#line 92 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	93	543		set __TextOutArgs.Options, 0
+0	92	546	#line 92 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	93	546		mov __TextOutArgs.Text, __strbufmain
+0	92	548	#line 92 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	93	548		syscall 13, __TextOutArgs
+0	92	551	#line 92 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	92	551	#line 92 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	92	551	#line 92 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	93	551	#line 93 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	94	551		mov oldDistance, newDistance
+0	93	553	#line 93 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	93	553	#line 93 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	94	553	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	95	553		getout __D0main, __constVal0, 14
+0	94	557	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	95	557		mov boxEnd, __D0main
+0	94	559	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	94	559	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	94	559	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	94	559	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	94	559	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	95	559		sub __float_stack_001main, __D0main, boxBegin
+0	94	563	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	94	563	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	94	563	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	95	563		mul __float_stack_001main, __float_stack_001main, diamRoda
+0	94	567	#line 94 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	97	567	#line 97 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	97	567	#line 97 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	98	567		div spaceBtwBoxes, __float_stack_001main, __constVal1000
+0	97	571	#line 97 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	97	571	#line 97 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	97	571	#line 97 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	98	571		mov __float_stack_001main, spaceBtwBoxes
+0	97	573	#line 97 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	97	573	#line 97 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	98	573		mov __DF0main, __constValf6P5
+0	97	575	#line 97 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	98	575		cmp 0, __zfmain, __float_stack_001main, __DF0main
+0	97	579	#line 97 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	98	579		mov __D0main, __zfmain
+0	98	581	#line 98 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	99	581		brtst 4, __NXC_Label_608, __zfmain
+0	6069	584	#line 6069 "NXCDefs.h"
+0	6070	584	#pragma macro 6
+0	6070	584		mov __PointOutArgs.Location.X, __constVal200
+0	6070	586		mov __PointOutArgs.Location.Y, __constVal200
+0	6070	588		mov __PointOutArgs.Options, __constVal1
+0	6070	590		syscall 14, __PointOutArgs
+0	4683	593	#line 4683 "NXCDefs.h"
+0	6069	593	#line 6069 "NXCDefs.h"
+0	99	593	#line 99 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	99	593	#line 99 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	100	593		set __signed_stack_001main, 0
+0	99	596	#line 99 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	99	596	#line 99 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	100	596		set __signed_stack_002main, 0
+0	99	599	#line 99 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	99	599	#line 99 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	100	599		mov __ArrHelper__main_244_0, __constStr0012
+0	99	601	#line 99 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	100	601		mov __DF0main, spaceBtwBoxes
+0	99	603	#line 99 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	100	603		numtostr __strretvalmain, __DF0main
+0	99	606	#line 99 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	100	606		strcat __strbufmain, __strretvalmain
+0	99	610	#line 99 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	100	610		mov __ArrHelper__main_244_1, __strbufmain
+0	99	612	#line 99 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	100	612		strcat __strbufmain, __ArrHelper__main_244_0, __ArrHelper__main_244_1
+0	100	617	#line 100 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	100	617	#line 100 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	101	617		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	100	619	#line 100 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	101	619		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	100	621	#line 100 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	101	621		set __TextOutArgs.Options, 0
+0	100	624	#line 100 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	101	624		mov __TextOutArgs.Text, __strbufmain
+0	100	626	#line 100 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	101	626		syscall 13, __TextOutArgs
+0	100	629	#line 100 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	101	629		mov __D0main, __TextOutArgs.Result
+0	100	631	#line 100 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	100	631	#line 100 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	100	631	#line 100 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	101	631		set __D0main, 1
+0	101	634	#line 101 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	102	634		tst 5, __zfmain, __D0main
+0	101	637	#line 101 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	102	637		brtst 4, __NXC_Label_616, __zfmain
+0	102	640	#line 102 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	103	640	#pragma macro 7
+0	103	640		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4739	663	#line 4739 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	102	663	#line 102 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	102	663	#line 102 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	103	663		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	102	666	#line 102 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	7921	666	#line 7921 "NXCDefs.h"
+0	7922	666		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	669	#line 7921 "NXCDefs.h"
+0	103	669	#line 103 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	105	669	#line 105 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	106	669		jmp __NXC_Label_615
+0	105	671	#line 105 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	105	671	#line 105 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	6069	671	#line 6069 "NXCDefs.h"
+0	6070	671	#pragma macro 6
+0	6070	671		mov __PointOutArgs.Location.X, __constVal200
+0	6070	673		mov __PointOutArgs.Location.Y, __constVal200
+0	6070	675		mov __PointOutArgs.Options, __constVal1
+0	6070	677		syscall 14, __PointOutArgs
+0	4758	680	#line 4758 "NXCDefs.h"
+0	6069	680	#line 6069 "NXCDefs.h"
+0	106	680	#line 106 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	106	680	#line 106 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	107	680		set __signed_stack_001main, 0
+0	106	683	#line 106 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	106	683	#line 106 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	107	683		set __signed_stack_002main, 0
+0	106	686	#line 106 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	106	686	#line 106 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	107	686		strcat __strbufmain, __constStr0013
+0	107	690	#line 107 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	107	690	#line 107 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	108	690		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	107	692	#line 107 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	108	692		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	107	694	#line 107 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	108	694		set __TextOutArgs.Options, 0
+0	107	697	#line 107 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	108	697		mov __TextOutArgs.Text, __strbufmain
+0	107	699	#line 107 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	108	699		syscall 13, __TextOutArgs
+0	107	702	#line 107 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	108	702		mov __D0main, __TextOutArgs.Result
+0	107	704	#line 107 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	107	704	#line 107 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	6069	704	#line 6069 "NXCDefs.h"
+0	6070	704	#pragma macro 6
+0	6070	704		mov __PointOutArgs.Location.X, __constVal200
+0	6070	706		mov __PointOutArgs.Location.Y, __constVal200
+0	6070	708		mov __PointOutArgs.Options, __constVal1
+0	6070	710		syscall 14, __PointOutArgs
+0	4793	713	#line 4793 "NXCDefs.h"
+0	6069	713	#line 6069 "NXCDefs.h"
+0	108	713	#line 108 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	108	713	#line 108 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	109	713		set __signed_stack_001main, 0
+0	108	716	#line 108 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	108	716	#line 108 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	109	716		set __signed_stack_002main, 0
+0	108	719	#line 108 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	108	719	#line 108 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	109	719		mov __DF0main, spaceBtwBoxes
+0	109	721	#line 109 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	109	721	#line 109 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	110	721		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	109	723	#line 109 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	110	723		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	109	725	#line 109 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	110	725		set __TextOutArgs.Options, 0
+0	109	728	#line 109 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	110	728		numtostr __TextOutArgs.Text, __DF0main
+0	109	731	#line 109 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	110	731		syscall 13, __TextOutArgs
+0	109	734	#line 109 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	109	734	#line 109 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	109	734	#line 109 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	110	734	#line 110 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	111	734		set flag_inicio, 3
+0	110	737	#line 110 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	110	737	#line 110 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	114	737	#line 114 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	114	737	#line 114 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	115	737		jmp __NXC_Label_545
+0	114	739	#line 114 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	114	739	#line 114 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	115	739	#pragma macro 26
+0	115	739		acquire __RLSBmutex0
+0	115	740		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	115	742		set __RLSBytesCount0, 1
+0	115	745		wait2 NA, __constVal15
+0	115	748		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	115	750		index __D0main, __RLSReadBuf0, 65535
+0	115	754		release __RLSBmutex0
+0	4843	755	#line 4843 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	114	755	#line 114 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	115	755		mov distance, __D0main
+0	114	757	#line 114 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	114	757	#line 114 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	115	757	#line 115 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	116	757		mov __signed_stack_001main, flag_inicio
+0	115	759	#line 115 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	115	759	#line 115 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	116	759		set __D0main, 3
+0	115	762	#line 115 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	116	762		cmp 4, __zfmain, __signed_stack_001main, __D0main
+0	115	766	#line 115 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	116	766		mov __D0main, __zfmain
+0	116	768	#line 116 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	117	768		brtst 4, __NXC_Label_636, __zfmain
+0	116	771	#line 116 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	117	771	#pragma macro 26
+0	117	771		acquire __RLSBmutex0
+0	117	772		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	117	774		set __RLSBytesCount0, 1
+0	117	777		wait2 NA, __constVal15
+0	117	780		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	117	782		index __D0main, __RLSReadBuf0, 65535
+0	117	786		release __RLSBmutex0
+0	4866	787	#line 4866 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	116	787	#line 116 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	117	787		mov distance, __D0main
+0	116	789	#line 116 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	116	789	#line 116 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	117	789	#line 117 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	118	789		mov __float_stack_001main, boxEnd
+0	117	791	#line 117 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	117	791	#line 117 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	118	791		getout __D0main, __constVal0, 14
+0	117	795	#line 117 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	118	795		sub __float_stack_001main, __float_stack_001main, __D0main
+0	117	799	#line 117 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	117	799	#line 117 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	117	799	#line 117 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	118	799		mul __float_stack_001main, __float_stack_001main, diamRoda
+0	117	803	#line 117 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	117	803	#line 117 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	117	803	#line 117 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	118	803		div __float_stack_001main, __float_stack_001main, __constVal1000
+0	117	807	#line 117 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	117	807	#line 117 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	117	807	#line 117 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	117	807	#line 117 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	117	807	#line 117 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	118	807		div __DF0main, spaceBtwBoxes, __constVal2
+0	117	811	#line 117 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	118	811		cmp 0, __zfmain, __float_stack_001main, __DF0main
+0	117	815	#line 117 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	118	815		mov __D0main, __zfmain
+0	118	817	#line 118 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	119	817		brtst 4, __NXC_Label_642, __zfmain
+0	118	820	#line 118 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	119	820		set __D0main, 30
+0	119	823	#line 119 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	120	823	#pragma macro 10
+0	120	823		acquire __OnRevMutex
+0	120	824		neg __OnRev_Tmp, __D0main
+0	120	827		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	120	850		release __OnRevMutex
+0	4921	851	#line 4921 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	119	851	#line 119 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	120	851	#line 120 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	121	851		jmp __NXC_Label_641
+0	120	853	#line 120 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	120	853	#line 120 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	121	853		set __D0main, 40
+0	121	856	#line 121 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	122	856	#pragma macro 10
+0	122	856		acquire __OnRevMutex
+0	122	857		neg __OnRev_Tmp, __D0main
+0	122	860		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	122	883		release __OnRevMutex
+0	4932	884	#line 4932 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	121	884	#line 121 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	121	884	#line 121 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	122	884		set __D0main, 40
+0	122	887	#line 122 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	123	887	#pragma macro 7
+0	123	887		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4939	910	#line 4939 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	122	910	#line 122 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	122	910	#line 122 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	123	910		set __Wait_7qG2_ms_7qG2_000_inline_main, 1500
+0	122	913	#line 122 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	7921	913	#line 7921 "NXCDefs.h"
+0	7922	913		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	916	#line 7921 "NXCDefs.h"
+0	123	916	#line 123 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	123	916	#line 123 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	124	916	#pragma macro 26
+0	124	916		acquire __RLSBmutex3
+0	124	917		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	124	919		set __RLSBytesCount3, 1
+0	124	922		wait2 NA, __constVal15
+0	124	925		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	124	927		index __D0main, __RLSReadBuf3, 65535
+0	124	931		release __RLSBmutex3
+0	4953	932	#line 4953 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	123	932	#line 123 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	124	932		mov __signed_stack_001main, __D0main
+0	123	934	#line 123 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	124	934		set __D0main, 20
+0	123	937	#line 123 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	124	937		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	123	941	#line 123 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	124	941		mov __D0main, __zfmain
+0	124	943	#line 124 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	125	943		brtst 4, __NXC_Label_658, __zfmain
+0	124	946	#line 124 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	125	946		set __D0main, 30
+0	125	949	#line 125 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	126	949	#pragma macro 7
+0	126	949		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4971	972	#line 4971 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	125	972	#line 125 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	126	972	#line 126 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	127	972		jmp __NXC_Label_657
+0	126	974	#line 126 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	126	974	#line 126 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	127	974		set __D0main, 40
+0	127	977	#line 127 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	128	977	#pragma macro 10
+0	128	977		acquire __OnRevMutex
+0	128	978		neg __OnRev_Tmp, __D0main
+0	128	981		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	128	1004		release __OnRevMutex
+0	4982	1005	#line 4982 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	127	1005	#line 127 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	127	1005	#line 127 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	128	1005		set __D0main, 40
+0	128	1008	#line 128 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	129	1008	#pragma macro 7
+0	129	1008		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4989	1031	#line 4989 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	128	1031	#line 128 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	128	1031	#line 128 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	129	1031		set __Wait_7qG2_ms_7qG2_000_inline_main, 1500
+0	128	1034	#line 128 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	7921	1034	#line 7921 "NXCDefs.h"
+0	7922	1034		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1037	#line 7921 "NXCDefs.h"
+0	129	1037	#line 129 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	138	1037	#line 138 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	139	1037	#pragma macro 7
+0	139	1037		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	5002	1060	#line 5002 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	138	1060	#line 138 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	157	1060	#line 157 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	158	1060		jmp __NXC_Label_635
+0	157	1062	#line 157 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+0	158	1062		exit -1, -1
 1	4885	0		setin __constVal1, __ResetSensorPort, 5
 1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
@@ -881,240 +1117,283 @@ Clump	Line	PC	Source
 3	5731	78		mov __RLSReadBuf1, __RLSLastGoodRead1
 3	5733	80		arrsize __RLSBytesCount1, __RLSReadBuf1
 3	5735	83		subret ____ReadLSBytes1_return
-4	14	0	#line 14 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	15	0	#pragma macro 9
-4	15	0		acquire __ColorSensorReadMutex
-4	15	1		mov __ColorSensorReadArgs.Port, __constVal2
-4	15	3		syscall 34, __ColorSensorReadArgs
-4	15	6		mov colorval, __ColorSensorReadArgs.ColorValue
-4	15	8		mov raw, __ColorSensorReadArgs.RawArray
-4	15	10		mov norm, __ColorSensorReadArgs.NormalizedArray
-4	15	12		mov scaled, __ColorSensorReadArgs.ScaledArray
-4	15	14		tst 4, __D0ForwardOnBlackLine, __ColorSensorReadArgs.Result
-4	15	17		release __ColorSensorReadMutex
-4	3793	18	#line 3793 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	14	18	#line 14 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	15	18		mov color, __D0ForwardOnBlackLine
-4	14	20	#line 14 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	14	20	#line 14 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	17	20	#line 17 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	18	20		mov __signed_stack_001ForwardOnBlackLine, colorval
-4	17	22	#line 17 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	18	22	#line 18 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	19	22		set __D0ForwardOnBlackLine, 2
-4	18	25	#line 18 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	19	25		cmp 2, __zfForwardOnBlackLine, __signed_stack_001ForwardOnBlackLine, __D0ForwardOnBlackLine
-4	18	29	#line 18 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	19	29		mov __D0ForwardOnBlackLine, __zfForwardOnBlackLine
-4	19	31	#line 19 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	20	31		brtst 4, __NXC_Label_493, __zfForwardOnBlackLine
-4	19	34	#line 19 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	20	34		set __D0ForwardOnBlackLine, 40
-4	20	37	#line 20 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	21	37	#pragma macro 7
-4	21	37		setout __OUT_AC, 2, __D0ForwardOnBlackLine, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	3819	60	#line 3819 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	20	60	#line 20 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	22	60	#line 22 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	23	60		jmp __NXC_Label_496
-4	23	62	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	24	62		set cont, 0
-4	23	65	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	23	65	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	23	65	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	24	65		mov __signed_stack_001ForwardOnBlackLine, colorval
-4	23	67	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	23	67	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	24	67		set __D0ForwardOnBlackLine, 2
-4	23	70	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	24	70		cmp 1, __zfForwardOnBlackLine, __signed_stack_001ForwardOnBlackLine, __D0ForwardOnBlackLine
-4	23	74	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	24	74		mov __D0ForwardOnBlackLine, __zfForwardOnBlackLine
-4	23	76	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	24	76		brtst 4, __NXC_Label_502, __zfForwardOnBlackLine
-4	23	79	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	24	79		mov __signed_stack_001ForwardOnBlackLine, __D0ForwardOnBlackLine
-4	23	81	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	24	81		mov __signed_stack_002ForwardOnBlackLine, cont
-4	23	83	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	23	83	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	24	83		set __D0ForwardOnBlackLine, 2
-4	23	86	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	24	86		cmp 0, __zfForwardOnBlackLine, __signed_stack_002ForwardOnBlackLine, __D0ForwardOnBlackLine
-4	23	90	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	23	90	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	24	90		and __D0ForwardOnBlackLine, __signed_stack_001ForwardOnBlackLine, __zfForwardOnBlackLine
-4	24	94	#line 24 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	25	94		tst 5, __zfForwardOnBlackLine, __D0ForwardOnBlackLine
-4	24	97	#line 24 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	25	97		brtst 4, __NXC_Label_500, __zfForwardOnBlackLine
-4	24	100	#line 24 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	25	100		set __D0ForwardOnBlackLine, 30
-4	25	103	#line 25 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	26	103	#pragma macro 10
-4	26	103		acquire __OnRevMutex
-4	26	104		neg __OnRev_Tmp, __D0ForwardOnBlackLine
-4	26	107		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	26	130		release __OnRevMutex
-4	3869	131	#line 3869 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	25	131	#line 25 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	25	131	#line 25 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	26	131		mov __D0ForwardOnBlackLine, __constValNeg30
-4	26	133	#line 26 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	27	133	#pragma macro 10
-4	27	133		acquire __OnRevMutex
-4	27	134		neg __OnRev_Tmp, __D0ForwardOnBlackLine
-4	27	137		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	27	160		release __OnRevMutex
-4	3876	161	#line 3876 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	26	161	#line 26 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	26	161	#line 26 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	27	161		set __Wait_7qG2_ms_7qG2_000_inline_ForwardOnBlackLine, 25
-4	26	164	#line 26 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	7921	164	#line 7921 "NXCDefs.h"
-4	7922	164		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_ForwardOnBlackLine
-4	7921	167	#line 7921 "NXCDefs.h"
-4	27	167	#line 27 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	27	167	#line 27 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	28	167	#pragma macro 9
-4	28	167		acquire __ColorSensorReadMutex
-4	28	168		mov __ColorSensorReadArgs.Port, __constVal2
-4	28	170		syscall 34, __ColorSensorReadArgs
-4	28	173		mov colorval, __ColorSensorReadArgs.ColorValue
-4	28	175		mov raw, __ColorSensorReadArgs.RawArray
-4	28	177		mov norm, __ColorSensorReadArgs.NormalizedArray
-4	28	179		mov scaled, __ColorSensorReadArgs.ScaledArray
-4	28	181		tst 4, __D0ForwardOnBlackLine, __ColorSensorReadArgs.Result
-4	28	184		release __ColorSensorReadMutex
-4	3893	185	#line 3893 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	27	185	#line 27 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	28	185		mov color, __D0ForwardOnBlackLine
-4	27	187	#line 27 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	27	187	#line 27 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	29	187	#line 29 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	30	187		add cont, cont, __constVal1
-4	29	191	#line 29 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	30	191	#line 30 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	31	191		jmp __NXC_Label_499
-4	30	193	#line 30 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	31	193	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	32	193		set cont, 0
-4	31	196	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	31	196	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	31	196	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	32	196		mov __signed_stack_001ForwardOnBlackLine, colorval
-4	31	198	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	31	198	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	32	198		set __D0ForwardOnBlackLine, 2
-4	31	201	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	32	201		cmp 1, __zfForwardOnBlackLine, __signed_stack_001ForwardOnBlackLine, __D0ForwardOnBlackLine
-4	31	205	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	32	205		mov __D0ForwardOnBlackLine, __zfForwardOnBlackLine
-4	31	207	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	32	207		brtst 4, __NXC_Label_516, __zfForwardOnBlackLine
-4	31	210	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	32	210		mov __signed_stack_001ForwardOnBlackLine, __D0ForwardOnBlackLine
-4	31	212	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	32	212		mov __signed_stack_002ForwardOnBlackLine, cont
-4	31	214	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	31	214	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	32	214		set __D0ForwardOnBlackLine, 4
-4	31	217	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	32	217		cmp 0, __zfForwardOnBlackLine, __signed_stack_002ForwardOnBlackLine, __D0ForwardOnBlackLine
-4	31	221	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	31	221	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	32	221		and __D0ForwardOnBlackLine, __signed_stack_001ForwardOnBlackLine, __zfForwardOnBlackLine
-4	32	225	#line 32 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	33	225		tst 5, __zfForwardOnBlackLine, __D0ForwardOnBlackLine
-4	32	228	#line 32 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	33	228		brtst 4, __NXC_Label_514, __zfForwardOnBlackLine
-4	32	231	#line 32 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	33	231		mov __D0ForwardOnBlackLine, __constValNeg30
-4	33	233	#line 33 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	34	233	#pragma macro 10
-4	34	233		acquire __OnRevMutex
-4	34	234		neg __OnRev_Tmp, __D0ForwardOnBlackLine
-4	34	237		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	34	260		release __OnRevMutex
-4	3952	261	#line 3952 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	33	261	#line 33 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	33	261	#line 33 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	34	261		set __D0ForwardOnBlackLine, 30
-4	34	264	#line 34 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	35	264	#pragma macro 10
-4	35	264		acquire __OnRevMutex
-4	35	265		neg __OnRev_Tmp, __D0ForwardOnBlackLine
-4	35	268		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	35	291		release __OnRevMutex
-4	3959	292	#line 3959 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	34	292	#line 34 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	34	292	#line 34 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	35	292		set __Wait_7qG2_ms_7qG2_000_inline_ForwardOnBlackLine, 25
-4	34	295	#line 34 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	7921	295	#line 7921 "NXCDefs.h"
-4	7922	295		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_ForwardOnBlackLine
-4	7921	298	#line 7921 "NXCDefs.h"
-4	35	298	#line 35 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	35	298	#line 35 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	36	298	#pragma macro 9
-4	36	298		acquire __ColorSensorReadMutex
-4	36	299		mov __ColorSensorReadArgs.Port, __constVal2
-4	36	301		syscall 34, __ColorSensorReadArgs
-4	36	304		mov colorval, __ColorSensorReadArgs.ColorValue
-4	36	306		mov raw, __ColorSensorReadArgs.RawArray
-4	36	308		mov norm, __ColorSensorReadArgs.NormalizedArray
-4	36	310		mov scaled, __ColorSensorReadArgs.ScaledArray
-4	36	312		tst 4, __D0ForwardOnBlackLine, __ColorSensorReadArgs.Result
-4	36	315		release __ColorSensorReadMutex
-4	3972	316	#line 3972 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	35	316	#line 35 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	36	316		mov color, __D0ForwardOnBlackLine
-4	35	318	#line 35 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	35	318	#line 35 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	37	318	#line 37 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	38	318		add cont, cont, __constVal1
-4	37	322	#line 37 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	40	322	#line 40 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	41	322		jmp __NXC_Label_513
-4	40	324	#line 40 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	40	324	#line 40 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	40	324	#line 40 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	41	324	#pragma macro 26
-4	41	324		acquire __RLSBmutex0
-4	41	325		mov __RLSReadBuf0, __RLSBbufLSWrite1
-4	41	327		set __RLSBytesCount0, 1
-4	41	330		wait2 NA, __constVal15
-4	41	333		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-4	41	335		index __D0ForwardOnBlackLine, __RLSReadBuf0, 65535
-4	41	339		release __RLSBmutex0
-4	3989	340	#line 3989 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	40	340	#line 40 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	41	340		mov distance, __D0ForwardOnBlackLine
-4	40	342	#line 40 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	40	342	#line 40 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	41	342	#line 41 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	42	342	#pragma macro 26
-4	42	342		acquire __RLSBmutex1
-4	42	343		mov __RLSReadBuf1, __RLSBbufLSWrite1
-4	42	345		set __RLSBytesCount1, 1
-4	42	348		wait2 NA, __constVal15
-4	42	351		subcall __ReadLSBytes1, ____ReadLSBytes1_return
-4	42	353		index __D0ForwardOnBlackLine, __RLSReadBuf1, 65535
-4	42	357		release __RLSBmutex1
-4	3997	358	#line 3997 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	41	358	#line 41 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	42	358		mov distance_back, __D0ForwardOnBlackLine
-4	41	360	#line 41 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	41	360	#line 41 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	45	360	#line 45 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-4	46	360		subret __ForwardOnBlackLine_return
-5	142	0	#line 142 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
-5	143	0		subret ____initialize_global_data_return
+4	5784	0	#pragma macro 25
+4	5784	0		acquire __CLSWMutex3
+4	5784	1		set __CLSWArgs3.Port, 3
+4	5784	4		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+4	5784	6		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+4	5784	8		syscall 21, __CLSWArgs3
+4	5784	11		mov __RLSBResult3, __CLSWArgs3.Result
+4	5784	13		release __CLSWMutex3
+4	5784	14	#line 5784 "NXTDefs.h"
+4	5785	14		brtst 4, __RLSBReturn3, __RLSBytesCount3
+4	5786	17		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+4	5787	21		brtst 5, __RLSBError3, __RLSBResult3
+4	5788	24		set __RLSBIterations3, 4
+4	5790	27	#pragma macro 23
+4	5790	27		acquire __CLSCSMutex3
+4	5790	28		set __CLSCSArgs3.Port, 3
+4	5790	31		syscall 23, __CLSCSArgs3
+4	5790	34		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+4	5790	36		mov __RLSBResult3, __CLSCSArgs3.Result
+4	5790	38		release __CLSCSMutex3
+4	5790	39	#line 5790 "NXTDefs.h"
+4	5791	39		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+4	5792	43		brtst 2, __RLSBError3, __RLSBIterations3
+4	5793	46		brtst 0, __RLSBError3, __RLSBResult3
+4	5794	49		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+4	5796	52		wait2 NA, __constVal15
+4	5797	55		jmp __RLSBDoCheckStatus3
+4	5800	57	#pragma macro 25
+4	5800	57		acquire __CLSRMutex3
+4	5800	58		set __CLSRArgs3.Port, 3
+4	5800	61		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+4	5800	63		syscall 22, __CLSRArgs3
+4	5800	66		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+4	5800	68		mov __RLSBResult3, __CLSRArgs3.Result
+4	5800	70		release __CLSRMutex3
+4	5800	71	#line 5800 "NXTDefs.h"
+4	5801	71		brtst 5, __RLSBError3, __RLSBResult3
+4	5802	74		mov __RLSLastGoodRead3, __RLSReadBuf3
+4	5803	76		jmp __RLSBDone3
+4	5805	78		mov __RLSReadBuf3, __RLSLastGoodRead3
+4	5807	80		arrsize __RLSBytesCount3, __RLSReadBuf3
+4	5809	83		subret ____ReadLSBytes3_return
+5	14	0	#line 14 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	15	0	#pragma macro 9
+5	15	0		acquire __ColorSensorReadMutex
+5	15	1		mov __ColorSensorReadArgs.Port, __constVal2
+5	15	3		syscall 34, __ColorSensorReadArgs
+5	15	6		mov colorval, __ColorSensorReadArgs.ColorValue
+5	15	8		mov raw, __ColorSensorReadArgs.RawArray
+5	15	10		mov norm, __ColorSensorReadArgs.NormalizedArray
+5	15	12		mov scaled, __ColorSensorReadArgs.ScaledArray
+5	15	14		tst 4, __D0ForwardOnBlackLine, __ColorSensorReadArgs.Result
+5	15	17		release __ColorSensorReadMutex
+5	3797	18	#line 3797 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	14	18	#line 14 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	15	18		mov color, __D0ForwardOnBlackLine
+5	14	20	#line 14 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	14	20	#line 14 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	17	20	#line 17 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	18	20		mov __signed_stack_001ForwardOnBlackLine, colorval
+5	17	22	#line 17 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	18	22	#line 18 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	19	22		set __D0ForwardOnBlackLine, 2
+5	18	25	#line 18 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	19	25		cmp 2, __zfForwardOnBlackLine, __signed_stack_001ForwardOnBlackLine, __D0ForwardOnBlackLine
+5	18	29	#line 18 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	19	29		mov __D0ForwardOnBlackLine, __zfForwardOnBlackLine
+5	19	31	#line 19 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	20	31		brtst 4, __NXC_Label_493, __zfForwardOnBlackLine
+5	19	34	#line 19 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	20	34		set __D0ForwardOnBlackLine, 40
+5	20	37	#line 20 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	21	37	#pragma macro 7
+5	21	37		setout __OUT_AC, 2, __D0ForwardOnBlackLine, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	3823	60	#line 3823 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	20	60	#line 20 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	22	60	#line 22 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	23	60		jmp __NXC_Label_496
+5	23	62	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	24	62		set cont, 0
+5	23	65	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	23	65	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	23	65	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	24	65		mov __signed_stack_001ForwardOnBlackLine, colorval
+5	23	67	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	23	67	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	24	67		set __D0ForwardOnBlackLine, 2
+5	23	70	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	24	70		cmp 1, __zfForwardOnBlackLine, __signed_stack_001ForwardOnBlackLine, __D0ForwardOnBlackLine
+5	23	74	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	24	74		mov __D0ForwardOnBlackLine, __zfForwardOnBlackLine
+5	23	76	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	24	76		brtst 4, __NXC_Label_502, __zfForwardOnBlackLine
+5	23	79	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	24	79		mov __signed_stack_001ForwardOnBlackLine, __D0ForwardOnBlackLine
+5	23	81	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	24	81		mov __signed_stack_002ForwardOnBlackLine, cont
+5	23	83	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	23	83	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	24	83		set __D0ForwardOnBlackLine, 2
+5	23	86	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	24	86		cmp 0, __zfForwardOnBlackLine, __signed_stack_002ForwardOnBlackLine, __D0ForwardOnBlackLine
+5	23	90	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	23	90	#line 23 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	24	90		and __D0ForwardOnBlackLine, __signed_stack_001ForwardOnBlackLine, __zfForwardOnBlackLine
+5	24	94	#line 24 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	25	94		tst 5, __zfForwardOnBlackLine, __D0ForwardOnBlackLine
+5	24	97	#line 24 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	25	97		brtst 4, __NXC_Label_500, __zfForwardOnBlackLine
+5	24	100	#line 24 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	25	100		set __D0ForwardOnBlackLine, 30
+5	25	103	#line 25 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	26	103	#pragma macro 10
+5	26	103		acquire __OnRevMutex
+5	26	104		neg __OnRev_Tmp, __D0ForwardOnBlackLine
+5	26	107		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	26	130		release __OnRevMutex
+5	3873	131	#line 3873 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	25	131	#line 25 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	25	131	#line 25 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	26	131		mov __D0ForwardOnBlackLine, __constValNeg30
+5	26	133	#line 26 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	27	133	#pragma macro 10
+5	27	133		acquire __OnRevMutex
+5	27	134		neg __OnRev_Tmp, __D0ForwardOnBlackLine
+5	27	137		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	27	160		release __OnRevMutex
+5	3880	161	#line 3880 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	26	161	#line 26 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	26	161	#line 26 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	27	161		set __Wait_7qG2_ms_7qG2_000_inline_ForwardOnBlackLine, 25
+5	26	164	#line 26 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	7921	164	#line 7921 "NXCDefs.h"
+5	7922	164		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_ForwardOnBlackLine
+5	7921	167	#line 7921 "NXCDefs.h"
+5	27	167	#line 27 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	27	167	#line 27 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	28	167	#pragma macro 9
+5	28	167		acquire __ColorSensorReadMutex
+5	28	168		mov __ColorSensorReadArgs.Port, __constVal2
+5	28	170		syscall 34, __ColorSensorReadArgs
+5	28	173		mov colorval, __ColorSensorReadArgs.ColorValue
+5	28	175		mov raw, __ColorSensorReadArgs.RawArray
+5	28	177		mov norm, __ColorSensorReadArgs.NormalizedArray
+5	28	179		mov scaled, __ColorSensorReadArgs.ScaledArray
+5	28	181		tst 4, __D0ForwardOnBlackLine, __ColorSensorReadArgs.Result
+5	28	184		release __ColorSensorReadMutex
+5	3897	185	#line 3897 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	27	185	#line 27 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	28	185		mov color, __D0ForwardOnBlackLine
+5	27	187	#line 27 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	27	187	#line 27 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	29	187	#line 29 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	30	187		add cont, cont, __constVal1
+5	29	191	#line 29 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	30	191	#line 30 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	31	191		jmp __NXC_Label_499
+5	30	193	#line 30 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	31	193	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	32	193		set cont, 0
+5	31	196	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	31	196	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	31	196	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	32	196		mov __signed_stack_001ForwardOnBlackLine, colorval
+5	31	198	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	31	198	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	32	198		set __D0ForwardOnBlackLine, 2
+5	31	201	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	32	201		cmp 1, __zfForwardOnBlackLine, __signed_stack_001ForwardOnBlackLine, __D0ForwardOnBlackLine
+5	31	205	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	32	205		mov __D0ForwardOnBlackLine, __zfForwardOnBlackLine
+5	31	207	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	32	207		brtst 4, __NXC_Label_516, __zfForwardOnBlackLine
+5	31	210	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	32	210		mov __signed_stack_001ForwardOnBlackLine, __D0ForwardOnBlackLine
+5	31	212	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	32	212		mov __signed_stack_002ForwardOnBlackLine, cont
+5	31	214	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	31	214	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	32	214		set __D0ForwardOnBlackLine, 4
+5	31	217	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	32	217		cmp 0, __zfForwardOnBlackLine, __signed_stack_002ForwardOnBlackLine, __D0ForwardOnBlackLine
+5	31	221	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	31	221	#line 31 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	32	221		and __D0ForwardOnBlackLine, __signed_stack_001ForwardOnBlackLine, __zfForwardOnBlackLine
+5	32	225	#line 32 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	33	225		tst 5, __zfForwardOnBlackLine, __D0ForwardOnBlackLine
+5	32	228	#line 32 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	33	228		brtst 4, __NXC_Label_514, __zfForwardOnBlackLine
+5	32	231	#line 32 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	33	231		mov __D0ForwardOnBlackLine, __constValNeg30
+5	33	233	#line 33 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	34	233	#pragma macro 10
+5	34	233		acquire __OnRevMutex
+5	34	234		neg __OnRev_Tmp, __D0ForwardOnBlackLine
+5	34	237		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	34	260		release __OnRevMutex
+5	3956	261	#line 3956 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	33	261	#line 33 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	33	261	#line 33 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	34	261		set __D0ForwardOnBlackLine, 30
+5	34	264	#line 34 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	35	264	#pragma macro 10
+5	35	264		acquire __OnRevMutex
+5	35	265		neg __OnRev_Tmp, __D0ForwardOnBlackLine
+5	35	268		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	35	291		release __OnRevMutex
+5	3963	292	#line 3963 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	34	292	#line 34 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	34	292	#line 34 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	35	292		set __Wait_7qG2_ms_7qG2_000_inline_ForwardOnBlackLine, 25
+5	34	295	#line 34 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	7921	295	#line 7921 "NXCDefs.h"
+5	7922	295		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_ForwardOnBlackLine
+5	7921	298	#line 7921 "NXCDefs.h"
+5	35	298	#line 35 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	35	298	#line 35 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	36	298	#pragma macro 9
+5	36	298		acquire __ColorSensorReadMutex
+5	36	299		mov __ColorSensorReadArgs.Port, __constVal2
+5	36	301		syscall 34, __ColorSensorReadArgs
+5	36	304		mov colorval, __ColorSensorReadArgs.ColorValue
+5	36	306		mov raw, __ColorSensorReadArgs.RawArray
+5	36	308		mov norm, __ColorSensorReadArgs.NormalizedArray
+5	36	310		mov scaled, __ColorSensorReadArgs.ScaledArray
+5	36	312		tst 4, __D0ForwardOnBlackLine, __ColorSensorReadArgs.Result
+5	36	315		release __ColorSensorReadMutex
+5	3976	316	#line 3976 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	35	316	#line 35 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	36	316		mov color, __D0ForwardOnBlackLine
+5	35	318	#line 35 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	35	318	#line 35 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	37	318	#line 37 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	38	318		add cont, cont, __constVal1
+5	37	322	#line 37 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	40	322	#line 40 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	41	322		jmp __NXC_Label_513
+5	40	324	#line 40 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	40	324	#line 40 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	40	324	#line 40 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	41	324	#pragma macro 26
+5	41	324		acquire __RLSBmutex0
+5	41	325		mov __RLSReadBuf0, __RLSBbufLSWrite1
+5	41	327		set __RLSBytesCount0, 1
+5	41	330		wait2 NA, __constVal15
+5	41	333		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+5	41	335		index __D0ForwardOnBlackLine, __RLSReadBuf0, 65535
+5	41	339		release __RLSBmutex0
+5	3993	340	#line 3993 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	40	340	#line 40 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	41	340		mov distance, __D0ForwardOnBlackLine
+5	40	342	#line 40 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	40	342	#line 40 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	41	342	#line 41 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	42	342	#pragma macro 26
+5	42	342		acquire __RLSBmutex1
+5	42	343		mov __RLSReadBuf1, __RLSBbufLSWrite1
+5	42	345		set __RLSBytesCount1, 1
+5	42	348		wait2 NA, __constVal15
+5	42	351		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+5	42	353		index __D0ForwardOnBlackLine, __RLSReadBuf1, 65535
+5	42	357		release __RLSBmutex1
+5	4001	358	#line 4001 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	41	358	#line 41 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	42	358		mov distance_back, __D0ForwardOnBlackLine
+5	41	360	#line 41 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	41	360	#line 41 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	45	360	#line 45 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+5	46	360		subret __ForwardOnBlackLine_return
+6	158	0	#line 158 "C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc"
+6	159	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc
-1	__ResetSensorSubroutine	757	NXTDefs.h
-2	__ReadLSBytes0	770	NXTDefs.h
-3	__ReadLSBytes1	855	NXTDefs.h
-4	ForwardOnBlackLine	940	C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc
-5	__initialize_global_data	1302	C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc
+1	__ResetSensorSubroutine	1065	NXTDefs.h
+2	__ReadLSBytes0	1078	NXTDefs.h
+3	__ReadLSBytes1	1163	NXTDefs.h
+4	__ReadLSBytes3	1248	NXTDefs.h
+5	ForwardOnBlackLine	1333	C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc
+6	__initialize_global_data	1695	C:\Users\aluno.D132888\Desktop\Projeto Final - Dupla 1\parking_robot.nxc
