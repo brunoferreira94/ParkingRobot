@@ -1,18 +1,52 @@
-#define speed 75
-#define low_speed 55
+#define speed 60
+#define low_speed 40
 #define COLOR_SENSOR IN_3
 #define USONIC_FRONT IN_4
 #define USONIC_BACK IN_2
 #define USONIC_LEFT IN_1
 
-int flag_inicio = 0, color, colorval;
-float distance, distance_back;
+int flag_inicio = 0, color, colorval, cont;, first, second;
+float distance, distance_back, spaceBtwBoxes;
+float diamRoda = 9.425;
 unsigned int raw[], norm[], scaled[];
 
+//FUNÇÃO PARA SEGUIR A LINHA RETA PRETA
+void ForwardOnBlackLine(){
+     color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
+
+        //if(scaled[0]<120 && scaled[1]<100 && scaled[2]<100)
+        if(colorval <= 2)
+        {
+            OnFwd(OUT_AC,speed);
+        }
+        else{
+            cont = 0;
+            while(colorval > 2 && cont < 2){
+                OnRev(OUT_A, low_speed);
+                OnRev(OUT_C, -low_speed);
+                Wait(50);
+                color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
+                cont++;
+            }
+            cont = 0;
+            while(colorval > 2 && cont < 4){
+                OnRev(OUT_A, -low_speed);
+                OnRev(OUT_C, low_speed);
+                Wait(50);
+                color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
+                cont++;
+            }
+        }
+
+        distance = SensorUS(USONIC_LEFT);
+        distance_back = SensorUS(USONIC_BACK);
+}
+
+//TAREFA PRINCIPAL
 task main()
 {
 
-    //Ligar os sensores nas entradas corretas
+    //Ligar os sensores em suas respectivas entradas
     SetSensorColorFull(COLOR_SENSOR);
     SetSensorLowspeed(USONIC_FRONT);
     SetSensorLowspeed(USONIC_BACK);
@@ -21,78 +55,84 @@ task main()
     color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
     distance = SensorUS(USONIC_LEFT);
     distance_back = SensorUS(USONIC_BACK);
-
+    //OBTÉM A PRIMEIRA DISTÂNCIA DO SENSOR
+    first = distance;
 
     while(flag_inicio < 3)
     {
-        color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
+        ForwardOnBlackLine();
+        //OBTÉM A ATUAL DISTÂNCIA
+        second = SensorUS(USONIC_LEFT);
+        //SE A DIFERENÇA ENTRE A ATUAL DISTÂNCIA E A PRIMEIRA DISTÂNCIA FOR MAIOR QUE 5 EM VALOR ABSOLUTO, ANDA 500 MS PARA FRENTE
+        if(abs(first - second) > 5 && flag_inicio == 0){
+            first = second;
+            ClearScreen();
+            TextOut(0,0, "FLAG 1");
+            OnFwd(OUT_AC, low_speed);
+            Wait(500);
+            flag_inicio = 1;
+        }
         
-        //if(scaled[0]<120 && scaled[1]<100 && scaled[2]<100)
-        if(colorval <= 2)
-        {
-            OnFwd(OUT_AC,speed);
+        //OBTÉM A ATUAL DISTÂNCIA
+        second = SensorUS(USONIC_LEFT);
+        //SE A DIFERENÇA ENTRE A ATUAL DISTÂNCIA E A PRIMEIRA DISTÂNCIA FOR MAIOR QUE 5 EM VALOR ABSOLUTO, OBTÉM A CONTAGEM DA ROTAÇÃO DO MOTOR
+        if(abs(first - second) > 5 && flag_inicio == 1){
+            first = second;
+            spaceBtwBoxes = MotorRotationCount(OUT_A);
+            ClearScreen();
+            TextOut(0,0, "FLAG 2");
+            flag_inicio = 2;
         }
-        else if(colorval > 2)
-        {
-            if(colorval > 2)
-            {
-                OnFwd(OUT_A,low_speed);
-                OnRev(OUT_C,low_speed);
-                Wait(100);
-                color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
-            }
-            if(colorval > 2)
-            {
-                OnFwd(OUT_C,low_speed);
-                OnRev(OUT_A,low_speed);
-                Wait(200);
-                color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
-            }
-            if(colorval > 2)
-            {
-                OnFwd(OUT_A,low_speed);
-                OnRev(OUT_C,low_speed);
-                Wait(300);
-                color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
-            }
-            if(colorval > 2)
-            {
-                OnFwd(OUT_C,low_speed);
-                OnRev(OUT_A,low_speed);
-                Wait(400);
-                color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
-            }
-            if(colorval > 2)
-            {
-                OnFwd(OUT_A,low_speed);
-                OnRev(OUT_C,low_speed);
-                Wait(200);
-                color = ReadSensorColorEx(COLOR_SENSOR,colorval,raw,norm,scaled);
+        
+        //OBTÉM A ATUAL DISTÂNCIA
+        second = SensorUS(USONIC_LEFT);
+        //SE A DIFERENÇA ENTRE A ATUAL DISTÂNCIA E A PRIMEIRA DISTÂNCIA FOR MAIOR QUE 5 EM VALOR ABSOLUTO, OBTÉM A DISTÂNCIA ENTRE AS DUAS CAIXAS EM CM
+        if(abs(first - second) > 5 && flag_inicio == 2){
+            first = second;
+            spaceBtwBoxes = (MotorRotationCount(OUT_A) - spaceBtwBoxes)*diamRoda;
+            ClearScreen();
+            TextOut(0,0, "FLAG 3");
+            flag_inicio = 3;
+            //SE A DISTÂNCIA ENTRE AS CAIXAS FOR MENOR QUE 15, DESLIGA O ROBÔ
+            if(spaceBtwBoxes < 15){
+                while(true){
+                  Off(OUT_AC);
+                  Wait(1000);
+                }
             }
         }
-
-        distance = SensorUS(USONIC_LEFT);
-        distance_back = SensorUS(USONIC_BACK);
-
-        do {
-           if(distance < 40){
-                       flag_inicio = 1;
-                       }
-           distance = SensorUS(USONIC_LEFT);
-           }while(flag_inicio == 0);
-           
-        if(flag_inicio == 1 && distance > 16){
-            flag_inicio++;
-            distance = 50; //só para dar um delay até a próxima verificação
-            }
-            
-        if(flag_inicio == 2 && distance > 16){
-            flag_inicio++;
-            distance = SensorUS(USONIC_LEFT);
-            }
-
+        
     }
+    distance = SensorUS(USONIC_LEFT);
+    while(flag_inicio == 2){
+         distance = SensorUS(USONIC_LEFT);
+         if(distance > 20){
+           //flag_inicio = 2;
+           //while(cont < 4){
+           //Gira em sentido anti-horário
+           OnRev(OUT_C,75);
+           OnRev(OUT_A,-75);
+           Wait(500);
+           flag_inicio = 3;
+          }
+      }
+      cont =0;
+      while(cont < 3){
+           //Enquanto não estiver perto o suficiente, vá em frente
+           while(SensorUS(USONIC_FRONT) > 20){
+                OnFwd(OUT_AC, low_speed);
+           }
+           Off(OUT_AC);
+
+           OnRev(OUT_C,75);
+           OnRev(OUT_A,-75);
+           Wait(500);
+           Off(OUT_AC);
+           cont++;
+     }
+}
     
+     /*
     //se move em S para frente
     OnFwd(OUT_C,25);
     OnFwd(OUT_A,75);
@@ -123,7 +163,4 @@ task main()
     OnFwd(OUT_A,75);
     OnRev(OUT_C,75);
     Wait(100);
-
-
-}
-
+    */
